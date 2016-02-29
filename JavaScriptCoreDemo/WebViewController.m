@@ -44,10 +44,16 @@
         make.edges.insets(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     
-//    mainBundle下的html貌似无法使用loadHTMLString来加载
-    NSURL *htmlFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"] isDirectory:NO];
-    [webView loadRequest:[NSURLRequest requestWithURL:htmlFile]];
+//  加载方式一
+//    NSURL *htmlFile = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html" subdirectory:@"htmls"];
+//    [webView loadRequest:[NSURLRequest requestWithURL:htmlFile]];
 
+    
+//  加载方式二
+    NSURL *baseURL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html" subdirectory:@"htmls"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html" inDirectory:@"htmls"];
+    NSString *htmlStr = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    [webView loadHTMLString:htmlStr baseURL:baseURL];
 }
 
 #pragma mark - UIWebViewDelegate

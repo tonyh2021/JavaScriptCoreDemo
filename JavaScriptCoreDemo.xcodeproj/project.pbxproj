@@ -17,8 +17,8 @@
 		A92777561C7ED59C00201B00 /* JavaScriptCoreDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92777551C7ED59C00201B00 /* JavaScriptCoreDemoUITests.m */; };
 		A92777651C7EE8FA00201B00 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A92777641C7EE8FA00201B00 /* Person.m */; };
 		A92777681C7F0B4A00201B00 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92777671C7F0B4A00201B00 /* WebViewController.m */; };
-		A927776F1C7FEB3E00201B00 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A927776E1C7FEB3E00201B00 /* test.html */; };
 		A92777721C7FF4B900201B00 /* MyJSInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A92777711C7FF4B900201B00 /* MyJSInterface.m */; };
+		A97BE3861C8412FD004974AB /* htmls in Resources */ = {isa = PBXBuildFile; fileRef = A97BE3851C8412FD004974AB /* htmls */; };
 		AC39EA440A0F3B1AB7A26E98 /* Pods_JavaScriptCoreDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4320EC45E5218665F8627DF9 /* Pods_JavaScriptCoreDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,9 +63,9 @@
 		A92777641C7EE8FA00201B00 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A92777661C7F0B4A00201B00 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		A92777671C7F0B4A00201B00 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		A927776E1C7FEB3E00201B00 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		A92777701C7FF4B900201B00 /* MyJSInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyJSInterface.h; sourceTree = "<group>"; };
 		A92777711C7FF4B900201B00 /* MyJSInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyJSInterface.m; sourceTree = "<group>"; };
+		A97BE3851C8412FD004974AB /* htmls */ = {isa = PBXFileReference; lastKnownFileType = folder; name = htmls; path = JavaScriptCoreDemo/htmls; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +114,7 @@
 		A92777241C7ED59C00201B00 = {
 			isa = PBXGroup;
 			children = (
+				A97BE3851C8412FD004974AB /* htmls */,
 				A927772F1C7ED59C00201B00 /* JavaScriptCoreDemo */,
 				A92777491C7ED59C00201B00 /* JavaScriptCoreDemoTests */,
 				A92777541C7ED59C00201B00 /* JavaScriptCoreDemoUITests */,
@@ -147,7 +148,6 @@
 				A927773E1C7ED59C00201B00 /* LaunchScreen.storyboard */,
 				A92777411C7ED59C00201B00 /* Info.plist */,
 				A92777301C7ED59C00201B00 /* Supporting Files */,
-				A927776D1C7FEB3E00201B00 /* Resource */,
 				A92777631C7EE8FA00201B00 /* Person.h */,
 				A92777641C7EE8FA00201B00 /* Person.m */,
 				A92777701C7FF4B900201B00 /* MyJSInterface.h */,
@@ -180,14 +180,6 @@
 				A92777571C7ED59C00201B00 /* Info.plist */,
 			);
 			path = JavaScriptCoreDemoUITests;
-			sourceTree = "<group>";
-		};
-		A927776D1C7FEB3E00201B00 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				A927776E1C7FEB3E00201B00 /* test.html */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A927776F1C7FEB3E00201B00 /* test.html in Resources */,
 				A92777401C7ED59C00201B00 /* LaunchScreen.storyboard in Resources */,
+				A97BE3861C8412FD004974AB /* htmls in Resources */,
 				A927773D1C7ED59C00201B00 /* Assets.xcassets in Resources */,
 				A927773B1C7ED59C00201B00 /* Main.storyboard in Resources */,
 			);
